@@ -57,7 +57,7 @@ public class TestCases {
 		
 		
 		cliente1.realizarTransaccion(tranferencia);
-		
+		celular1.realizarTransaccion(tranferencia);
 		
 			
 		
