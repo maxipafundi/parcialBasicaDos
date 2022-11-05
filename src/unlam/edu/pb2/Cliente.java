@@ -2,16 +2,18 @@ package unlam.edu.pb2;
 
 import java.util.ArrayList;
 
+
+
 public class Cliente implements Denunciable {
 
 	private String nombre;
 	
-	private Integer fondos;
+	private double fondos;
 	private Integer cuil;
 	private ArrayList <Dispositivo> dispositivos;
 	private ArrayList <Transaccion> transacciones = new ArrayList <>();
 
-	public Cliente(String nombre, Integer cuil, Integer fondos) {
+	public Cliente(String nombre, Integer cuil, double fondos) {
 		
 		this.nombre = nombre;
 		this.cuil = cuil;
@@ -24,9 +26,11 @@ public class Cliente implements Denunciable {
 		this.dispositivos.add(dispositivo);
 	}
 	
-	public void realizarTransaccion (Transaccion transacionARealizar){
-		this.transacciones.add(transacionARealizar);
+	public Integer cantidadDispositivos () {
+		return this.dispositivos.size();
 	}
+	
+	
 	
 	public String getNombre() {
 		return nombre;
@@ -45,15 +49,35 @@ public class Cliente implements Denunciable {
 	}
 
 
-	public Integer getFondos() {
+	public double getFondos() {
 		return fondos;
 	}
 
 
-	public void setFondos(Integer fondos) {
+	public void setFondos(Double fondos) {
 		this.fondos = fondos;
+		
 	}
 
+	@Override
+	public void add(Denunciable denunciable) {
+		
+		
+	}
+
+
+	
+
+
+
+
+
+	
+
+	
+
+
+	
 
 
 	

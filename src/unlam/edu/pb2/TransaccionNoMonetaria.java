@@ -1,15 +1,17 @@
 package unlam.edu.pb2;
 
-public class TransaccionNoMonetaria extends Transaccion {
+public abstract class TransaccionNoMonetaria extends Transaccion implements Monitoreable {
+
+	public TransaccionNoMonetaria(Cliente cliente, Dispositivo dispositivo) {
+		super(cliente, dispositivo);
+		// TODO Auto-generated constructor stub
+	}
 
 	
 	
 	
-	public TransaccionNoMonetaria(Integer numeroTransaccion , Integer score) {
-		super(numeroTransaccion, score);
 	
 	
-		
 		
 	}
 
@@ -24,4 +26,3 @@ public class TransaccionNoMonetaria extends Transaccion {
 	
 	
 	
-}

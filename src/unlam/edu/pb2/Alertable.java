@@ -4,5 +4,6 @@ public interface Alertable {
 
 	public void marcarComoCasoSospechoso();
 	public void confirmarSiFueFraude(Boolean fueFraude);
+	void marcarComoCasoSospechoso(Cliente cliente);
 	
 }
